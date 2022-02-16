@@ -42,6 +42,10 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, TwoActivitiesActivity::class.java)
                 startActivity(intent)
             }
+            R.id.task2_1_codingChallenge -> {
+                val intent = Intent(this, ThreeButtonActivity::class.java)
+                startActivity(intent)
+            }
         }
         return super.onOptionsItemSelected(item)
     }

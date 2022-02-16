@@ -1,5 +1,6 @@
 package org.martellina.androidstudio
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +9,8 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+
+const val COUNT = "count"
 
 class HelloToastActivity : AppCompatActivity() {
     private var mCount: Int = 0
@@ -25,6 +28,9 @@ class HelloToastActivity : AppCompatActivity() {
     fun showToast(view: View) {
         val toast: Toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT)
         toast.show()
+        val intent = Intent(this, HelloActivity::class.java)
+        intent.putExtra(COUNT, mCount.toString())
+        startActivity(intent)
     }
 
     fun countUp(view: View) {

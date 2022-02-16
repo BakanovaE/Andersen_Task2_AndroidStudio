@@ -27,4 +27,9 @@
         android:title="@string/task_2_1"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/task2.1.codingChallenge"
+        android:title="@string/task_2_1_cc"
+        app:showAsAction="never" />
+
 </menu>

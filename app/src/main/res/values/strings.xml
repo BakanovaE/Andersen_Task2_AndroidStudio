@@ -5,7 +5,7 @@
     <string name="hello_world">Hello World</string>
     <string name="happy_birthday_to_alex">Happy Birthday to Alex</string>
     <string name="task_1_2">Task 1.2</string>
-    <string name="button_label_toast">Toast</string>
+    <string name="button_label_toast">Say Hello</string>
     <string name="button_label_count">Count</string>
     <string name="count_initial_value">0</string>
     <string name="toast_message">Hello Toast!</string>
@@ -65,5 +65,9 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
     <string name="button_second">Reply</string>
     <string name="editText_second">Enter Your Reply Here</string>
     <string name="text_header_reply">Reply Received</string>
+    <string name="task_2_1_cc">Task 2.1 Coding Challenge</string>
+    <string name="text1">Text One</string>
+    <string name="text2">Text Two</string>
+    <string name="text3">Text Three</string>
 
 </resources>

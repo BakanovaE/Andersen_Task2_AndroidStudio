@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidStudio">
-        <activity android:name=".SecondActivity"
-            android:label = "@string/activity2_name"
+        <activity android:name=".HelloActivity"></activity>
+        <activity android:name=".ShowTextActivity" />
+        <activity android:name=".ThreeButtonActivity" />
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/activity2_name"
             android:parentActivityName=".TwoActivitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
