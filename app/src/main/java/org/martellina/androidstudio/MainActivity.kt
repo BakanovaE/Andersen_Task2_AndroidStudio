@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, HelloToastActivity::class.java)
                 startActivity(intent)
             }
+            R.id.task1_3 -> {
+                val intent = Intent(this, ScrollingTextActivity::class.java)
+                startActivity(intent)
+            }
         }
         return super.onOptionsItemSelected(item)
     }
