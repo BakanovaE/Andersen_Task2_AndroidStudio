@@ -9,10 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidStudio">
+        <activity android:name=".SecondActivity"
+            android:label = "@string/activity2_name"
+            android:parentActivityName=".TwoActivitiesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.martellina.androidstudio.TwoActivitiesActivity" />
+        </activity>
+        <activity android:name=".TwoActivitiesActivity" />
         <activity
             android:name=".NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/Theme.AndroidStudio.NoActionBar"></activity>
+            android:theme="@style/Theme.AndroidStudio.NoActionBar" />
         <activity
             android:name=".Task1_4Activity"
             android:label="@string/title_activity_task1_4"
