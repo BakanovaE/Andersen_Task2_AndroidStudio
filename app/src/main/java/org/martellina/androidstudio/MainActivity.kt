@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
 
             }
+            R.id.task1_2 -> {
+                val intent = Intent(this, HelloToastActivity::class.java)
+                startActivity(intent)
+            }
         }
         return super.onOptionsItemSelected(item)
     }

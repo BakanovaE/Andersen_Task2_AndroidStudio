@@ -7,4 +7,9 @@
         android:title="@string/task_1_1"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/task1.2"
+        android:title="@string/task_1_2"
+        app:showAsAction="never" />
+
 </menu>
