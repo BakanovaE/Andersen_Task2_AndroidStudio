@@ -1,7 +1,10 @@
 package org.martellina.androidstudio
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,8 +21,8 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId) {
-            R.id.task1_2 -> {
-                val intent = Intent(this, HelloToastActivity::class.java)
+            R.id.task1_1 -> {
+                val intent = Intent(this, HelloWorldActivity::class.java)
                 startActivity(intent)
 
             }
