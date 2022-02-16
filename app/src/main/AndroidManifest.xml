@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidStudio">
-        <activity android:name=".ScrollingTextActivity"></activity>
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/Theme.AndroidStudio.NoActionBar"></activity>
+        <activity
+            android:name=".Task1_4Activity"
+            android:label="@string/title_activity_task1_4"
+            android:theme="@style/Theme.AndroidStudio.NoActionBar" />
+        <activity android:name=".ScrollingTextActivity" />
         <activity android:name=".HelloToastActivity" />
         <activity android:name=".HelloWorldActivity" />
         <activity android:name=".MainActivity">

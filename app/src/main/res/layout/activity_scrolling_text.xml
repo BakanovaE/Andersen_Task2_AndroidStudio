@@ -33,7 +33,7 @@
                 android:padding="@dimen/padding_regular"
                 android:text="@string/article_subtitle"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
-            
+
             <TextView
                 android:id="@+id/article"
                 android:layout_width="wrap_content"
