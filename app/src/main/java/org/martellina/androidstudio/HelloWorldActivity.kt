@@ -13,5 +13,11 @@ class HelloWorldActivity : AppCompatActivity() {
 
         Log.d(LOG_TAG, "Hello World")
 
+        try {
+            throw Exception()
+        } catch (e: Exception) {
+            Log.e(LOG_TAG, "It`s an exception", e)
+        }
+
     }
 }
