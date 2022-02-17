@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/apples"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addApples"
+        android:text="@string/apples" />
+
+    <Button
+        android:id="@+id/cheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addCheese"
+        android:text="@string/cheese" />
+
+    <Button
+        android:id="@+id/rice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addRice"
+        android:text="@string/rice" />
+
+    <Button
+        android:id="@+id/bread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addBread"
+        android:text="@string/bread" />
+
+    <Button
+        android:id="@+id/tea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addTea"
+        android:text="@string/tea" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+package org.martellina.androidstudio
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.os.PersistableBundle
+import android.util.Log
+import android.view.View
+import android.widget.Button
+import android.widget.TextView
+
+class CounterActivity : AppCompatActivity() {
+
+    private lateinit var countButton: Button
+    private lateinit var textView: TextView
+    private var myCounter = 0
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_counter)
+
+        countButton = findViewById(R.id.count)
+        textView = findViewById(R.id.textView2)
+
+        if (savedInstanceState != null) {
+            myCounter = savedInstanceState.getInt("counter")
+            textView.text = myCounter.toString()
+        }
+    }
+
+    fun count(view: View) {
+        myCounter++
+        textView.text = myCounter.toString()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
+        super.onSaveInstanceState(outState, outPersistentState)
+        outState.putInt("counter", myCounter)
+        }
+
+}

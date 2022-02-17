@@ -32,4 +32,24 @@
         android:title="@string/task_2_1_cc"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/task2.2.codingChallenge"
+        android:title="@string/task_2_2_cc"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/task2.2.homework"
+        android:title="@string/task_2_2_homework"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/task2.3"
+        android:title="@string/task_2_3"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/task2.3.receiver"
+        android:title="@string/task_2_3_receiver"
+        app:showAsAction="never" />
+
 </menu>

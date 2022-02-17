@@ -46,6 +46,22 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, ThreeButtonActivity::class.java)
                 startActivity(intent)
             }
+            R.id.task2_2_codingChallenge -> {
+                val intent = Intent(this, ShoppingListActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.task2_2_homework -> {
+                val intent = Intent(this, CounterActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.task2_3 -> {
+                val intent = Intent(this, ImplicitIntentsActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.task2_3_receiver -> {
+                val intent = Intent(this, ReceiverActivity::class.java)
+                startActivity(intent)
+            }
         }
         return super.onOptionsItemSelected(item)
     }
