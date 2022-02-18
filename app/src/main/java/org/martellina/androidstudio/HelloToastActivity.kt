@@ -22,7 +22,6 @@ class HelloToastActivity : AppCompatActivity() {
         setContentView(R.layout.activity_hello_toast)
         mShowCount = findViewById(R.id.show_count)
         zeroButton = findViewById(R.id.button_zero)
-        zeroButton.setBackgroundResource(R.color.gray)
     }
 
     fun showToast(view: View) {
@@ -37,15 +36,15 @@ class HelloToastActivity : AppCompatActivity() {
         mCount++
         mShowCount.text = mCount.toString()
         if (mCount % 2 == 0) {
-            view.setBackgroundResource(R.color.button1)
+            view.setBackgroundColor(Color.BLACK)
         } else {
-            view.setBackgroundResource(R.color.button2)
+            view.setBackgroundColor(Color.RED)
         }
-        zeroButton.setBackgroundResource(R.color.purple_700)
+        zeroButton.setBackgroundColor(Color.GREEN)
     }
 
     fun makeZero(view: View) {
         mShowCount.text = 0.toString()
-        view.setBackgroundResource(R.color.gray)
+        view.setBackgroundColor(Color.DKGRAY)
     }
 }

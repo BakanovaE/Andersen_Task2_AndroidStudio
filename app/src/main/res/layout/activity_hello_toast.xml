@@ -8,7 +8,7 @@
 
     <Button
         android:id="@+id/button_toast"
-        android:layout_width="wrap_content"
+        android:layout_width="111dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -21,7 +21,7 @@
 
     <Button
         android:id="@+id/button_count"
-        android:layout_width="wrap_content"
+        android:layout_width="111dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:onClick="countUp"
@@ -47,10 +47,11 @@
 
     <Button
         android:id="@+id/button_zero"
-        android:layout_width="wrap_content"
+        android:layout_width="111dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:backgroundTint="@color/gray"
         android:onClick="makeZero"
         android:text="@string/button_label_zero"
         android:textColor="@android:color/white"

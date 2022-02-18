@@ -89,5 +89,6 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
     <string name="task_2_3_receiver">Task 2.3 Receiver</string>
     <string name="uri_label">URI: </string>
     <string name="take_a_picture">Take A Picture</string>
+    <string name="_0">0</string>
 
 </resources>

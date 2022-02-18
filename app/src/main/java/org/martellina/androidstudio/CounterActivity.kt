@@ -3,10 +3,11 @@ package org.martellina.androidstudio
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+
+private const val COUNTER = "count"
 
 class CounterActivity : AppCompatActivity() {
 
@@ -22,8 +23,7 @@ class CounterActivity : AppCompatActivity() {
         textView = findViewById(R.id.textView2)
 
         if (savedInstanceState != null) {
-            myCounter = savedInstanceState.getInt("counter")
-            textView.text = myCounter.toString()
+            textView.text = savedInstanceState.getString(COUNTER)
         }
     }
 
@@ -34,7 +34,7 @@ class CounterActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
         super.onSaveInstanceState(outState, outPersistentState)
-        outState.putInt("counter", myCounter)
-        }
+        outState.putString(COUNTER, textView.text.toString())
+    }
 
 }
