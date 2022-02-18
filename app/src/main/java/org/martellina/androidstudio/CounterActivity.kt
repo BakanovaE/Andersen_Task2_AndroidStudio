@@ -24,6 +24,7 @@ class CounterActivity : AppCompatActivity() {
 
         if (savedInstanceState != null) {
             textView.text = savedInstanceState.getString(COUNTER)
+            myCounter = Integer.parseInt(savedInstanceState.getString(COUNTER).toString())
         }
     }
 
